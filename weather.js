@@ -3,7 +3,7 @@ async function getWeather(){
     console.log("get weather function invoked2");
     var city=document.getElementById("city").value;
     var url="https://api.openweathermap.org/data/2.5/forecast?q=";
-    var key=<Enter your key in double quotes>;
+    var key="18a1145a9ee0c179fb398e9ba486991b";
     url=url.concat(city).concat('&appid=').concat(key).concat('&units=metric');
     console.log(url)
     let result=await fetch(url);
